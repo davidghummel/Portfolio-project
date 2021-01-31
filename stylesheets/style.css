@@ -6,8 +6,16 @@
 body {
   font-family: sans-serif;
 }
-.header {
+
+/* 
+Header + Navigation bar styling
+  
+
+*/
+.header a {
   font-size: 30px;
+  color: #000;
+  text-decoration: none;
   width: auto;
   display: flex;
   justify-content: center;
@@ -88,4 +96,11 @@ body {
   .nav-bar li {
     padding: 5px 15px;
   }
+}
+
+/*Body design*/
+.body-placeholder {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
 }
