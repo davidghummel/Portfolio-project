@@ -22,7 +22,7 @@ Header + Navigation bar styling
   margin-top: 4%;
 }
 .nav-bar {
-  padding: ;
+  padding: 0;
 }
 .nav-list {
   list-style-type: none;
