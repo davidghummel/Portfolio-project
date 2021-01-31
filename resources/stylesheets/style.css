@@ -23,13 +23,13 @@ Header + Navigation bar styling
 }
 .nav-bar {
   padding: 0;
+  margin: 0;
 }
 .nav-list {
   list-style-type: none;
 }
 .item {
   font-size: 12px;
-  padding: 15px 5px;
 }
 .nav-link:hover {
   color: rgb(17, 17, 17);
@@ -62,12 +62,18 @@ Header + Navigation bar styling
   display: block;
 }
 .bars {
-  background-color: #000;
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  width: 18px;
+  /*background-color: #000;
+  display: inline-block;*/
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 5px solid black;
 }
+/*
 .bars::before,
 .bars::after {
   background-color: #000;
@@ -83,12 +89,13 @@ Header + Navigation bar styling
 .bars::after {
   top: -5px;
 }
+*/
 
 /*Desktop display*/
 @media all and (min-width: 768px) {
   .item {
     display: block;
-    width: auto;
+    width: initial;
   }
   .toggle {
     display: none;
@@ -100,6 +107,7 @@ Header + Navigation bar styling
 
 /*Body design*/
 .body-placeholder {
+  margin-top: 20px;
   width: 100%;
   text-align: center;
   font-size: 12px;
